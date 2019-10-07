@@ -220,14 +220,15 @@ main img{
 
 .services-footer{
 	padding: 30px 15px;
-	display:flex;
+    display:flex;
+    justify-content:space-around;
 	
 }
 
 .services-footer div{
 	display:flex;
 	flex-direction:column;
-	
+	width:35%;
 	/* text-align:left; */
 
 }
@@ -288,6 +289,20 @@ footer{
     nav{
         /* font-size:12px; */
     }
+
+    .services-footer{
+        flex-direction:column;
+        align-items:center;
+
+    }
+    .services-footer div{
+        width:100%;
+        order:2;
+    }
+    .services-footer img{
+        order:1;
+        padding-bottom:20px;
+    }
 }
 
 @media only screen and (max-width: 500px){
@@ -345,4 +360,13 @@ footer{
         padding-bottom:5%;
         
     }
+
+
+    .services-main .info-card{
+        width:95%;
+    }
+
+
+
+
 }
