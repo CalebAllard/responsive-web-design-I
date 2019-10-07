@@ -1,3 +1,273 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container{
+	margin:0 auto;
+	max-width:920px;
+}
+
+
+header{
+	
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+	align-items:center;
+	flex-wrap: nowrap;
+	padding:10px 15px;
+
+}
+
+.services-header-img{
+	width:100%;
+	padding: 30px 0;
+}
+
+nav{
+	display:flex;
+	width:60%;
+	justify-content:space-between;
+	align-items:center;
+}
+
+nav a{
+	text-decoration: none;
+	color:grey;
+}
+
+.banner{
+	display:flex;
+	padding: 30px 0;
+	justify-content:space-evenly;
+	align-items:center;
+	border-bottom:2px solid black;
+}
+
+.banner .banner-text{
+	
+	text-align:center;
+}
+
+.banner-text h2{
+	font-size:62px;
+}
+
+.banner-text a{
+	color:black;
+	text-decoration:none;
+	border:2px solid black;
+	padding: 5px 15px;
+	
+}
+
+.services-info{
+	padding:25px 15px;
+	border-bottom:2px solid black;
+}
+.services-info h2 {
+	font-size:21px;
+}
+main{
+	padding:30px 15px;
+	border-bottom:2px solid black;
+}
+
+.two-col{
+	display:flex;
+	flex-direction:row;
+    justify-content:space-evenly;
+    width:100%;
+	
+}
+
+.two-col .topic{
+	width:35%;
+}
+
+main img{
+	padding: 30px 0;
+	width:100%;
+}
+
+.three-col{
+	display:flex;
+	flex-direction:row;
+    justify-content:space-evenly;
+    width:100%;
+}
+
+.three-col .topic{
+	width:30%;
+}
+
+.contact{
+	padding:30px 0;
+	height:220px;
+}
+
+.contact-info{
+	display:flex;
+	flex-direction:column;
+	justify-content: space-around;
+	height:100%;
+}
+
+.contact-info .copyright{
+	align-self:center;
+}
+
+.services-main{
+	display:flex;
+	flex-wrap: wrap;
+	
+	align-content: space-around;
+	justify-content: space-around;
+	/* height:740px; */
+}
+
+.info-card{
+	background-color:lightgrey;
+	border:2px solid black;
+	padding:10px;
+	display:flex;
+	flex-direction:column;
+	justify-content: space-around;
+	width: 410px;
+	height:200px;
+	margin-bottom:2%;
+	
+}
+
+.info-card a{
+	text-decoration:none;
+	color:black;
+	background-color:white;
+	border:2px solid black;
+	padding: 5px 15px;
+	width:140px;
+}
+
+.services-footer{
+	padding: 30px 15px;
+	display:flex;
+	
+}
+
+.services-footer div{
+	display:flex;
+	flex-direction:column;
+	
+	/* text-align:left; */
+
+}
+/* .services-footer div{
+	text-align:left;
+}
+*/
+.services-footer div ul{
+	/* list-style-type:circle; */
+	padding: 10px 0;
+
+}
+
+.services-footer ul li{
+	padding: 5px 0;
+	
+} 
+.services-footer ul li span{
+	padding-right:5px;
+	
+} 
+.copyright {
+	text-align:center;
+	width:100%;
+	
+}
+
+footer{
+	padding-left:25px !important;
+	padding-bottom:15px;
+	
+}
+@media only screen and (max-width: 800px){
+	
+    .banner img {
+        display:none;
+    }
+
+    .banner {
+        justify-content:center;
+        align-items:center;
+    }
+}
+
+@media only screen and (max-width: 500px){
+	
+}
