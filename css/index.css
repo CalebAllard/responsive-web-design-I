@@ -96,8 +96,8 @@ header img{
 
 nav{
 	display:flex;
-	width:100%;
-	justify-content:space-between;
+	width:95%;
+	justify-content:space-around;
 	align-items:center;
 }
 
@@ -132,8 +132,12 @@ nav a{
 }
 
 .services-info{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
 	padding:25px 15px;
-	border-bottom:2px solid black;
+    border-bottom:2px solid black;
+    width:100%;
 }
 .services-info h2 {
 	font-size:21px;
@@ -306,7 +310,9 @@ footer{
 }
 
 @media only screen and (max-width: 500px){
-    
+    .container{
+        margin: 0 auto;
+    }
     header{
         flex-direction:column;
         justify-content: space-between;
@@ -327,7 +333,7 @@ footer{
 
     header nav a{
         padding:10px 0;
-        width:100%;
+        width:112%;
         /* border-top:2px solid black; */
         border-bottom: 1px solid black;
         /* font-size:16px; */
@@ -361,12 +367,18 @@ footer{
         
     }
 
-
+    .services-main{
+        width:100%;
+        margin:0 auto;
+    }
     .services-main .info-card{
         width:95%;
+        /* margin:0 auto; */
     }
 
-
+    .services-footer img{
+        width:100%;
+    }
 
 
 }
